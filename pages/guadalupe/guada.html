@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="guada.css">
+  <title>Formulario de Contacto</title>
+  <script>
+
+
+  </script>
+
+
+</head>
+
+<body>
+  <section class="principal">
+    <div class="logo">
+      <img src="./asets/logo.png" alt="Logo de la tienda">
+    </div>
+
+    <div class="actions">
+      <a href="../lista_deseados/index.html">Lista de Deseados</a>
+      <i class="fa-solid fa-heart"></i>
+
+  </div>
+  <div class="user">
+      <a href="../cande/cande.html">Iniciar sesión</a>
+      <a href="../cande/registrate.html">Registro</a>
+
+  </div>
+  </section>
+
+  <header>
+    <nav>
+      <div class="enlaces">
+        <button class="animated-button" onclick="window.location.href = '../../index.html'">INICIO</a>
+        </button>
+        <button class="animated-button" onclick="window.location.href = '../andres/andres.html'">CATALOGO</a>
+        </button>
+        <button class="animated-button" onclick="window.location.href = '../manu/index.html'">MI CUENTA</a>
+        </button>
+    </div>
+    </nav>
+  </header>
+
+
+
+  <div>
+    <a href="../home_pages.html"></a>
+  </div>
+
+
+
+  <main>
+    <form id="contactForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="genero">Género:</label>
+      <select id="genero" name="genero">
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+      </select>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" required>
+
+      <label for="profesion">Profesión:</label>
+      <select id="profesion" name="profesion">
+          <option value="profesor">Profesor</option>
+          <option value="alumno">Alumno</option>
+          <option value="otro">Otro</option>
+      </select>
+
+      <label for="generoLibro">Género de Libro de Interés:</label>
+      <select id="generoLibro" name="generoLibro">
+          <option value="ficcion">Ficción</option>
+          <option value="poesia">Poesía</option>
+          <option value="terror">Terror</option>
+          <option value="otros">Otros</option>
+      </select>
+
+      <label for="comentario">Comentario:</label>
+      <textarea id="comentario" name="comentario" rows="4"></textarea>
+
+      <button type="button" onclick="enviarFormulario()">ENVIAR</button>
+      <button type="button" onclick="borrarFormulario()">BORRAR</button>
+  </form>
+
+    </section>
+
+  </main>
+  <script src="guada.js"></script>
+  <footer class="footer">
+    <div class="container-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./asets/logo2.PNG" alt="Logo de la tienda">
+            </div>
+            <div class="footer-info">
+                <p><strong>23528 BOOKS </strong></p>
+                <p><em>Tu destino para explorar nuevos mundos</em></p>
+                <p>Dirección: 123 Calle de los Libros</p>
+                <p>Teléfono: (123) 456-7890</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://kit.fontawesome.com/3e8b0b13fa.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

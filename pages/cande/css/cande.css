@@ -1,0 +1,296 @@
+/* Fuentes  */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+/* Estilo comun a toda la pagina */
+*{
+    
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.search input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search button {
+    background-color: #ff9100d0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.user a,
+.actions a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+    text-shadow: 5px 5px 10px black;
+}
+
+
+/*HEADER*/
+
+ /* Estilo para el encabezado y la barra de navegación */
+ header {
+    background-color: #ff9100d0; /* Fondo oscuro para el encabezado */
+    color: #fff; /* Texto en color blanco */
+    text-align: center; /* Centrar el contenido del encabezado */
+    padding: 10px 0; /* Espacio interno en la parte superior e inferior */
+ }
+ 
+ /* Estilo para la barra de navegación */
+ nav {
+    display: flex; /* Mostrar elementos en una línea */
+    justify-content: center; /* Distribuir los elementos de izquierda a derecha */
+    align-items: center; /* Centrar verticalmente los elementos */
+    max-width: auto; /* Ancho máximo de la barra de navegación */
+    margin: 0 auto; /* Centrar la barra de navegación en la página */
+    padding: 0 20px; /* Espacio interno en los lados izquierdo y derecho */
+ }
+ 
+ 
+ /*estilos de los botones del nav */
+ 
+ .animated-button {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    padding: 12px 15px;
+    border: none;
+    text-shadow: 5px 5px 5px black;
+    font-size: 20px;
+    background-color: inherit;
+    border-radius: 15px;
+    font-weight: 600;
+    color: rgb(253, 253, 253);
+    box-shadow: 0 0 0 2px rgb(255, 238, 0);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 10px #fffb0060;
+    color: #ff0000;
+  }
+
+/*BODY*/
+
+body{
+    background-image: url('../img/fondo_libreria\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Estilo del titulo "iniciar sesion" y "registrarse" */
+.title { 
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px black; /*no puedo cambiar el tamaño y no se por que*/
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    color: rgb(255, 255, 255)
+
+}
+
+/*Estilo contenedor del formulario de Inicio de sesion y registro*/
+fieldset{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content:center;
+    background-color: rgba(97, 115, 137, 1);
+    border-radius: 30px;
+    border-style: hidden;
+    box-shadow: 3vw;
+    margin: 15vh auto 15vh auto ;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.email,.password {
+    justify-content: flex-start;    
+}
+/*Caracteristicas especificas del tamaño del contenedor de la pantalla de Incio de Sesion*/
+.inicio-sesion{
+    
+    width: 25vw;
+    min-height: 60vh;
+
+}
+
+/*Caracteristicas especificas del tamaño del contenedor de la pantalla de registro*/
+.fieldset-registro{
+
+    width: 30vw;
+    min-height: 75vh;
+}
+
+/*Caractetisticas comunes para el boton de "Iniciar sesion" y "registrarse"*/
+.boton-sesion,.boton-registro{
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(187, 221, 215, 1);
+    color: rgba(97, 115, 137, 0.8);
+    transition: background-color 0.5s;
+
+    margin-top: 10%;    
+
+    width: 152px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: hidden;
+    cursor: pointer;
+}
+
+
+/*Animacion de los botones del formulario*/
+.boton-sesion:hover, .boton-registro:hover{
+    background-color:  #ff9100d0;
+    color: rgba(97, 115, 137, 1);
+}
+
+/*Caracteristica del texto "No tenes cuenta"*/
+.noRegistro{
+    text-align: center; 
+    margin-top: 5vh;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    }
+
+/*Caracteristicas del boton de "Registrate"*/
+.botonNoCuenta{
+    background-color: inherit;
+    border-style: hidden;
+    color: #ff9100d0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    transition: color 0.5s;
+}
+.botonNoCuenta:hover{
+    color: rgba(48, 48, 48, 1);
+}
+
+/*Estilos de los imput de inicio de sesion y registro y de sus respectivos label*/
+input{
+    text-align: center;
+    background-color: rgba(187, 221, 215, 1);
+    height: 40px;
+    margin-top: 2%;
+    border-radius: 30px;
+    border-style: inherit;
+    }
+    
+label{
+    font-family: "Ubuntu", sans-serif;
+    color:rgb(254, 254, 254);
+    text-align: left;
+    margin-left: 2vw;
+    }
+    
+
+
+
+/*FOOTER*/
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-info, .footer-social {
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer-social i{
+    font-size: 50px;
+    margin: 0 18px;
+    align-self: center;
+    color: #ff9100d0;
+}
+
+.footer-social i{
+    width: 50px;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-right: 95px;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+}
+
+
